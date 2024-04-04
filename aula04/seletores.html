@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+
+    <style>
+        /* Selecione todas as  tags h1 */
+        h1 {
+            color: pink;
+        }
+
+        p{
+            color: brown;
+        }
+
+        /* Selecione o elemento com o id titulo_principal */
+        #titulo_principal{
+            color: rgb(152, 112, 216);
+            font-style: normal;
+        }
+
+        #conteudo_principal {
+            color: turquoise;
+            text-decoration: underline;
+        }
+
+        /* Selecione todos os elementos com a classe destaque */
+        .destaque {
+            background-color: pink;
+        }
+
+        /* Selecione todos os elementos com a classe corprimaria */
+        .corprimaria {
+            color: blueviolet;
+        }
+
+        .container {
+            background-color: plum;
+            border: 4px solid black;
+            font-style: italic;
+
+        }
+
+        p.destaque.corprimaria {
+            font-size: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1 id="titulo_principal">Primeiro Titulo</h1>
+
+        <p class="destaque corprimaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reiciendis aspernatur, voluptatibus illum debitis ullam adipisci eum tempore rerum incidunt totam repellat expedita consequatur dolore ducimus id earum ad vel.</p>
+    
+    </div>
+
+    <h1>Segundo Titulo</h1>
+
+    <p id="conteudo_principal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid fugiat asperiores animi deserunt pariatur, enim sed commodi assumenda, quidem exercitationem minus. Odio aliquid possimus quos harum similique animi voluptatibus?</p>
+
+    <p id="conteudo_principal" class="corprimaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ratione perspiciatis. Incidunt nesciunt esse placeat quisquam vel maxime. Debitis quaerat impedit libero quia tenetur expedita id. Suscipit soluta praesentium corporis?</p>
+
+    <p class="destaque corprimaria">
+        A falta de educaçao </p>
+
+</body>
+</html>
