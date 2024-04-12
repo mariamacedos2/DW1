@@ -1,0 +1,22 @@
+.alinhamento{
+    text-align: center;
+}
+
+.container {
+    background-color: plum;
+    border: 4px solid black;
+    font-style: italic;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: justify;
+}
+
+.fonte_formula{
+    font-size: 2em;
+}
