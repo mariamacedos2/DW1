@@ -1,0 +1,23 @@
+.versiculo{
+  font-size: 1em
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.jesus{
+    color: red;
+}
+
+.titulo{ 
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+sup{
+    color: black;
+}
+      
