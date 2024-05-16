@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Document</title>
+
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul.disciplinas{
+            list-style-type: disc;
+        }
+
+        .menu{
+            list-style-type: none;
+            padding-left: 2;
+            margin-left: 2px;
+            transition: 0.5s;
+            border-radius: 8px;
+        }
+
+        .menu li{
+            background-color: pink;
+            border: 2px solid aquamarine;
+            box-sizing: border-box;
+            padding: 10px 10px 5px;
+            margin-bottom: 5px;
+            width: 150px;
+            transition: 0.5s;
+            /* margin-bottom: 5px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-left: 10px;*/
+
+        }
+        .menu li:hover{
+            background-color: rgb(163, 255, 163);
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>listas ordenadas</h1>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h1>listas não ordenadas</h1>
+
+    <ul class="disciplinas">
+        <li>
+            <div>Desenvolvimento Web 1</div>
+            <ul class="disciplinas">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript básico</li>
+            </ul>
+        </li>
+        <li>Instalação e manutenção de computadores</li>
+        <li>Desenvolvimento Web 2</li>
+    </ul>
+
+    <h1>Listas personalizadas</h1>
+    <ul class="menu">
+        <li>
+           <i class="material-icons">add </i> Item 1</li>
+        <li>
+            <i class="material-icons">favorite</i> Item 2</li>
+        <li>
+            <i class="material-icons">key</i> Item 3</li>
+        <li>
+            <i class="material-icons">cloud</i> Item 4</li>
+    </ul>
+    
+</body>
+</html>
