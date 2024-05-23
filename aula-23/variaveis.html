@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Jacquard+12&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap');
+
+        :root{
+            --cor-fundo: rgb(255, 195, 250);
+            --cor-principal: rgb(3, 3, 3);
+            --fonte: 15px "Anton", sans-serif;
+            --fonte-destaque: 40px "Jacquard 12", system-ui;
+            --altura-cabecalho: 50px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font: var(--fonte)
+        }
+        .container{
+            background-color: var(--cor-fundo);
+            height: 100vh;
+        }
+
+        .cabecalho{
+            border: 1px solid var(--cor-principal);
+            color: rgb(214, 110, 183);
+            height: var(--altura-cabecalho);
+            overflow-y: scroll;
+            padding: 10px;
+        }
+
+        .principal{
+            border: 1px solid var(--cor-principal);
+            color: blueviolet;
+            padding: 10px;
+            height: calc(100vh - var(--altura-cabecalho));
+        }
+
+        .principal h1{
+            padding-left: 25px;
+            font: var(--fonte-destaque);
+        }
+
+        .principal ul{
+            padding-left: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cabecalho">
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>Cabeçalho</p>
+            <p>MACEDOOO</p>
+            <p>ZEE RISONHOO</p>
+            <P>Rallyyy da quebrada</P>
+        </div>
+        <div class="principal">
+            <h1>Lista de tarefas</h1>
+            <ul>
+                <li>Tarefa 1</li>
+                <li>Tarefa 2</li>
+                <li>Tarefa 3</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
