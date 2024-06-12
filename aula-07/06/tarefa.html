@@ -10,10 +10,41 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
-        .secao1{
-            
+        div#home{
+            background-color: rgb(0, 84, 79);
+            height: 100vh;
+            width: 100vw;
+            background-image: url(https://play-lh.googleusercontent.com/Pdo9YTbDpUMypxc3BsrK_69CYFjwdJ9aKVTX7CpT0ZQH27E7xanEPatKttFeyCbjd3jMYbLCL3XhwXiaDQ);
+            background-repeat: no-repeat;
+            background-size: 300px;
+            background-attachment: inherit;
+        }
+
+        div#secao1{
+            background-color: palevioletred pink;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        div#secao2 {
+          background-color: rgb(88, 88, 138);
+          width: 100vw;
+          height: 100vh;
+        }
+    
+        div#secao3 {
+            background-color: rgb(45, 45, 100);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div#secao4 {
+            background-color: pink;
+            width: 100vw;
+            height: 100vh;
         }
 
         h1{
@@ -21,38 +52,37 @@
             text-align: center;
         }
 
-        .container{
+        div.container{
             background-color: rgb(93, 91, 137);
             width: 100vw;
             height: 100vh;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .menu{
-            height: 50px;
+        ul.menu{
             background-color: rgb(0, 0, 0);
         }
 
-        .menu ul{
-            display: flex;
-        }
-
-        .menu li{
+        ul.menu li{
             list-style: none;
+            display: inline-block;
         }
 
-        .menu a{
+        ul.menu a{
+            width: 120px;
+            background-color: black;
             display: inline-block;
-            padding: 10px 15px;
-            height: 50px;
+            padding: 10px;
+            border: 1px solid black;
             text-decoration: none;
             color: rgb(255, 255, 255);
             transition: 0.3s;
         }
 
-        .menu a:hover{
+        ul.menu a:hover{
             background-color: beige;
             color: black;
+            border: 1px solid black;
         }
 
     </style>
@@ -60,20 +90,39 @@
 <body>
 
     <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Seção 1</a></li>
-                <li><a href="">Seção 2</a></li>
-                <li><a href="">Seção 3</a></li>
-                <li><a href="">Contatos</a></li>
-            </ul>
-        </div>
-        <div class="principal">
+        <ul class="menu">
+            <li><a href="#home">História</a></li>
+            <li><a href="#secao1">Seção 1</a></li>
+            <li><a href="#secao2">Seção 2</a></li>
+            <li><a href="#secao3">Seção 3</a></li>
+            <li><a href="#secao4">Contatos</a></li>
+        </ul>
 
-        </div>
+        <div id="home">
+            <h1>Grey's Anatomy</h1>
 
-        <h1>Seção Principal</h1>
+            <p>A série foca na vida de médicos cirurgiões internos, residentes e atendentes; e como eles evoluem na sua profissão ao tentar manter a vida dos seus pacientes e nos seus relacionamentos pessoais. O título da série é uma brincadeira com Anatomia de Gray, um renomado livro de anatomia humana escrito por Henry Gray.</p>
+          </div>
+          
+          <div id="secao1">
+            <h3>Seção 1</h3>
+          </div>
+          
+          <div id="secao2">
+            <h3>Seção 2</h3>
+          </div>
+
+          <div id="secao3">
+            <h3>Seção 3</h3>
+          </div>
+
+          <div id="secao4">
+            <h3>Seção 4</h3>
+          </div>
+        
+        </div>      
+
     </div>
+
 </body>
 </html>
