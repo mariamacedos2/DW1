@@ -36,3 +36,26 @@
 15- order: -3
 
 16- align-self: flex-end;
+
+17- align-self:flex-end;
+    order: 3
+
+18- flex-wrap: wrap
+
+19- flex-direction: column;
+    flex-wrap: wrap;
+
+20- flex-flow: column wrap;
+
+21- align-content:flex-start
+
+22- align-content: flex-end;
+
+23- flex-direction: column-reverse;
+    align-content: center;
+
+24- flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-between;
