@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            justify-content: s;
+            /*gap: 10px;
+            /*gap coloca distancia entre os elementos*/
+            background-color: rgb(198, 255, 255);
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+
+        .item1{
+            background-color: pink;
+            order: 2;
+            flex-shrink: 1;
+        }
+
+        .item2{
+            background-color: palevioletred;
+            flex-shrink: 1;
+            align-self: flex-end;
+        }
+
+        .item3{
+            background-color: papayawhip;
+            /*flex-grow: 3;*/
+            /*flex grow abilita abilidade de aumentar o item, ocupando o espaço vazio*/
+            flex-shrink: 2;
+            /*diminui mais a caixa */
+            align-self: flex-start;
+        }
+
+    </style>
+<body>
+    
+    <div class="container">
+
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
+
+    </div>
+</body>
+</html>
