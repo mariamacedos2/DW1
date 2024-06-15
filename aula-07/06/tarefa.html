@@ -13,18 +13,38 @@
             scroll-behavior: smooth;
         }
 
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+
+        .img{
+            display: flex;
+            align-items: start;
+
+        }
+
+        .titulo{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: beige;
+            text-align: center;
+            margin: 250px;
+            font-size: 70px;
+        }
+
         div#home{
-            background-color: rgb(0, 84, 79);
+            background-color: rgb(4, 81, 76);
             height: 100vh;
             width: 100vw;
-            background-image: url(https://play-lh.googleusercontent.com/Pdo9YTbDpUMypxc3BsrK_69CYFjwdJ9aKVTX7CpT0ZQH27E7xanEPatKttFeyCbjd3jMYbLCL3XhwXiaDQ);
             background-repeat: no-repeat;
             background-size: 300px;
             background-attachment: inherit;
+            display: flex;
+            justify-content: flex-end;
         }
 
         div#secao1{
-            background-color: palevioletred pink;
+            background-color: rgb(2, 72, 72);
             height: 100vh;
             width: 100vw;
         }
@@ -47,20 +67,29 @@
             height: 100vh;
         }
 
-        h1{
+        #home h1{
             color: beige;
             text-align: center;
+            display: flex;
+            align-self: baseline;
+            justify-content: center;
+        }
+
+        #home p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         div.container{
-            background-color: rgb(93, 91, 137);
+            background-color: rgb(2, 51, 51);
             width: 100vw;
             height: 100vh;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         ul.menu{
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(30, 7, 73);
         }
 
         ul.menu li{
@@ -70,7 +99,7 @@
 
         ul.menu a{
             width: 120px;
-            background-color: black;
+            background-color: rgb(16, 2, 81);
             display: inline-block;
             padding: 10px;
             border: 1px solid black;
@@ -81,7 +110,7 @@
 
         ul.menu a:hover{
             background-color: beige;
-            color: black;
+            color: rgb(6, 2, 52);
             border: 1px solid black;
         }
 
@@ -90,23 +119,22 @@
 <body>
 
     <div class="container">
-        <ul class="menu">
-            <li><a href="#home">História</a></li>
-            <li><a href="#secao1">Seção 1</a></li>
-            <li><a href="#secao2">Seção 2</a></li>
-            <li><a href="#secao3">Seção 3</a></li>
-            <li><a href="#secao4">Contatos</a></li>
-        </ul>
+        <div class="menu">
+            <ul>
+             <li><a href="#home">História</a></li>
+             <li><a href="#secao1">Seção 1</a></li>
+             <li><a href="#secao2">Seção 2</a></li>
+             <li><a href="#secao3">Seção 3</a></li>
+             <li><a href="#secao4">Contatos</a></li>
+            </ul>
+        </div>
+        <h1 class="titulo">Grey's Anatomy</h1>
+   </div>
 
-        <div id="home">
-            <h1>Grey's Anatomy</h1>
 
-            <p>A série foca na vida de médicos cirurgiões internos, residentes e atendentes; e como eles evoluem na sua profissão ao tentar manter a vida dos seus pacientes e nos seus relacionamentos pessoais. O título da série é uma brincadeira com Anatomia de Gray, um renomado livro de anatomia humana escrito por Henry Gray.</p>
-          </div>
-          
-          <div id="secao1">
-            <h3>Seção 1</h3>
-          </div>
+    <div id="secao1">
+        <div class="box"></div>
+    </div>
           
           <div id="secao2">
             <h3>Seção 2</h3>
