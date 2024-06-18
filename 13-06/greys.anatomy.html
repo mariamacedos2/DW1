@@ -4,49 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .container{
-            background-color: rgb(4, 60, 78);
-            width: 400vw;
-            height: 400vh;
-        }
-
-        
-        ul.menu{
-            background-color: rgb(30, 7, 73);
-        }
-
-        ul.menu li{
-            list-style: none;
-            display: inline-block;
-        }
-
-        ul.menu a{
-            width: 120px;
-            background-color: rgb(16, 2, 81);
-            display: inline-block;
-            padding: 10px;
-            border: 1px solid black;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            transition: 0.3s;
-        }
-
-        ul.menu a:hover{
-            background-color: beige;
-            color: rgb(6, 2, 52);
-            border: 1px solid black;
-        }
-
-    </style>
 </head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+        /* gap: 10px; */
+        /* row-gap: 10px; */
+        /* column-gap: 10px; */
+
+        background-color: rgb(201, 201, 201);
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item1 {
+        background-color: rgb(85, 85, 255);
+        order: 2;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+    }
+    .item2 {
+        background-color: rgb(85, 245, 85);
+        order: 1;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+        align-self: flex-end;
+    }
+    .item3 {
+        background-color: rgb(248, 80, 80);
+        order: 1;
+        /* flex-grow: 3; */
+        flex-shrink: 3;
+        align-self: flex-start;
+    }
+
+
+</style>
+
 <body>
-    
+
     <div class="container">
-
-        <h1>grey</h1>
-
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
     </div>
     
 </body>
