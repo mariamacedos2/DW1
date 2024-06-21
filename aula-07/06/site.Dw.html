@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        a.voltar {
+            text-decoration: none;
+            font-size: 1rem;
+            color: aliceblue;
+            background-color: var(--cor-back);
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: .5rem;
+            margin-left: .5rem;
+            flex-direction: column;
+        }
+
+        .fonte_importada{
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .box {
+            width: 30vw;
+            height: 60vh;            
+            border: 2px solid black;
+            /* border-radius: 50%; */ 
+            color: white;           
+        }
+
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .posicaoFixa {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .img{
+            display: flex;
+            align-items: start;
+
+        }
+
+        .titulo{
+            font-family: sans-serif;
+            color: beige;
+            text-align: center;
+            margin: 250px;
+            font-size: 70px;
+        }
+
+        div#home{
+            background-image: url(https://img.odcdn.com.br/wp-content/uploads/2024/01/imagem_2024-01-17_210533498.png);
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        div#secao1{
+            background-color: rgb(9, 0, 48);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .item{
+            width: 20vw;
+            height: 65vh;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        .persona{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            margin-top: 3rem;
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+
+        div#secao2 {
+          background: linear-gradient(rgb(2, 24, 41), rgb(0, 0, 37));
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .imagem22{
+            background-image: url(https://variety.com/wp-content/uploads/2024/01/Screen-Shot-2024-01-30-at-5.53.15-PM.png?w=681&h=454&crop=1);
+            width: 50vw;
+            height: 50vh;
+            background-repeat: no-repeat;
+            align-items: center;
+        }
+
+        .enrredo{
+            color: rgb(235, 235, 213);
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50vw;
+            justify-content: left;
+        }
+
+        .enrredo2{
+            color: rgb(235, 235, 213);
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50vw;
+            height: 80vh;
+            justify-content: flex-end;
+            margin: 1rem;
+        }
+
+        .imagem33{
+            background-image: url(https://akns-images.eonline.com/eol_images/Entire_Site/2018930/rs_600x600-181030141601-600-pompeo-dempsey-greys-couples.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top);
+            height: 80vh;
+            width: 40vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    
+        div#secao3 {
+            background-color: rgb(10, 2, 41);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .romance{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        #home h1{
+            color: beige;
+            text-align: center;
+            display: flex;
+            align-self: baseline;
+            justify-content: center;
+        }
+
+        #home p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.container{
+            background-color: rgb(2, 51, 51);
+            width: 100vw;
+            height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+   
+
+        ul.menu li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        ul.menu a{
+            width: 120px;
+            background-color: rgb(22, 0, 51);
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid rgb(22, 0, 51);
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+
+        ul.menu a:hover{
+            background-color: beige;
+            color: rgb(6, 2, 52);
+            border: 1px solid black;
+        }
+
+        .imagem1{
+            background-image: url(https://pm1.aminoapps.com/6922/27d443f8f397a2dcca7f147463986ddfe9d7637cr1-478-641v2_00.jpg);
+        }
+
+        .imagem2{
+            background-image: url(https://media.gettyimages.com/id/93764761/pt/foto/united-states-103253_d_242-greys-anatomy-patrick-dempsey-stars-as-dr-derek-shepherd-on-greys.jpg?s=612x612&w=gi&k=20&c=COTnGcKK5sWDuALQVztquPPHLJZX7X_bvPO5IG3_bps=);
+        }
+
+        .imagem3{
+            background-image: url(https://pm1.aminoapps.com/6764/8fac46f0ed72e10bf03b3013563f77ab38e438bcv2_00.jpg);
+        }
+
+        .imagem4{
+            background-image: url(https://i.pinimg.com/736x/3f/52/54/3f5254f622db8c295ee98e2804fe3b1c.jpg)
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="home">
+            <div id="menu">
+                <ul class="menu">
+                 <li><a href="#home">Tema</a></li>
+                 <li><a href="#secao1">Personagens</a></li>
+                 <li><a href="#secao2">Assunto</a></li>
+                 <li><a href="#secao3">Romance</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="secao1">
+            <div class="persona">
+                <div class="box item imagem1"></div>
+                <div class="box item imagem2"></div>
+                <div class="box item imagem3"></div>
+                <div class="box item imagem4"></div></div>
+            <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
+        </div>
+          
+         <div id="secao2"> 
+            <div class="imagem22"></div>
+             <div class="enrredo">   
+                 <h1>"Grey's Anatomy"</h1><p>é uma série de drama médico que estreou em 2005 e se tornou uma das mais populares e duradouras da televisão americana.    Criada por Shonda Rhimes, a série se passa no fictício hospital Seattle Grace Mercy West (posteriormente renomeado para Grey Sloan Memorial Hospital) e segue a vida pessoal e profissional de seus internos, residentes e médicos.</p>
+                 <br>
+                    <h2>Temas Principais:</h2>
+                    <br>
+                        <h3>Personagens Complexos:</h3><p>A série é conhecida por seus personagens profundamente desenvolvidos, cada um com suas próprias jornadas emocionais e profissionais. A protagonista, inicialmente, é Meredith Grey (interpretada por Ellen Pompeo), filha da renomada cirurgiã Ellis Grey.</p>
+                       <br>
+                       <h3>Drama Médico:</h3><p>A rotina hospitalar é o pano de fundo para histórias intensas, desde casos médicos complexos até dilemas éticos e conflitos entre os personagens.</p>
+                            <br>
+                        <h3>Relacionamentos Interpessoais:</h3><p>"Grey's Anatomy" explora intensamente os relacionamentos pessoais dos personagens, incluindo amizades, romances, rivalidades e tragédias.</p>
+                            <br>
+                        <h3>Questões Sociais e Éticas:</h3> <p>A série aborda temas sociais relevantes, como discriminação, diversidade, violência doméstica, saúde mental, entre outros, muitas vezes usando casos médicos como ponto de partida para discussões mais amplas.</p>
+                            <br>
+                        <h3>Impacto Cultural:</h3> <p>A série influenciou a televisão contemporânea ao quebrar barreiras em termos de representação de personagens e narrativas complexas dentro do gênero médico-dramático.</p>
+                            <br>
+                    <p>Em resumo, "Grey's Anatomy" é mais do que uma simples série médica; é uma exploração profunda das vidas de seus personagens e das complexidades do trabalho médico, enquanto também aborda questões sociais e emocionais relevantes para seu público.
+                    </p>
+
+                </div>
+                <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
+          </div>
+
+          <div id="secao3">
+                <div class="romance">    
+                    <div class="imagem33"></div>
+                    <div class="enrredo2">
+                        <p class="fonte_importada">O romance entre Derek Shepherd e Meredith Grey em Grey's Anatomy é um dos pilares emocionais da série, repleto de altos e baixos que capturaram o coração dos fãs ao longo das temporadas. Desde o momento em que se conheceram no hospital Seattle Grace, sua conexão foi intensa e complexa, moldada não apenas pela química irresistível, mas também pelos desafios pessoais e profissionais que enfrentaram juntos.</p>
+                        <br>
+                        <p class="fonte_importada">Derek, o neurocirurgião carismático e talentoso conhecido como "McDreamy", e Meredith, a residente ambiciosa e determinada, logo se viram envolvidos em um jogo de amor e profissão no caótico ambiente hospitalar. Suas trajetórias individuais, marcadas por tragédias pessoais, como a perda de entes queridos e dificuldades emocionais, foram entrelaçadas ao longo dos anos.</p>
+                        <br>
+                        <p class="fonte_importada">O relacionamento deles foi longe de ser perfeito. Enfrentaram desafios significativos, incluindo a infidelidade de Derek e o desejo de Meredith de se afirmar como médica e mulher independente. No entanto, sua conexão profunda e a maneira como se apoiavam mutuamente durante os momentos mais difíceis da vida e da carreira médica continuaram a solidificar seu vínculo. </p>
+                        <br>
+                        <p class="fonte_importada">Ao longo das temporadas, os altos e baixos de Derek e Meredith refletiram não apenas o romance apaixonado, mas também as complexidades do compromisso, do perdão e da resiliência. O público testemunhou sua jornada de amor desde o início de suas carreiras até momentos de grande felicidade e tristeza, moldando não apenas suas vidas pessoais, mas também suas identidades dentro do hospital e além.</p>
+                        <br>
+                        <p class="fonte_importada">O romance de Derek e Meredith em Grey's Anatomy é uma poderosa saga de amor, sacrifício e autodescoberta, que capturou a imaginação dos telespectadores ao longo de anos e continua sendo uma parte inesquecível da história da televisão.</p>
+                    </div> 
+                </div>
+                <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>  
+          </div>
+        </div>
+      
+
+    </div>
+
+</body>
+</html>
