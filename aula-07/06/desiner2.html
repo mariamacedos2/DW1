@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        h1{
+            font-family: "Shadows Into Light", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .cont2{
+            width: 80vw;
+            height: 100vh;
+        }
+
+        .cont2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: space-between;
+        }
+
+        .topo{
+            width: 80vw;
+            height: 10vh;
+            background-color: rgb(255, 238, 127);
+            justify-content: end ;
+            border: 1px solid black;
+        }
+
+        .side{
+            width: 30vw;
+            height: 100vh;
+            background-color: rgb(124, 216, 244);
+            border: 1px solid black;
+        }
+
+        .conteudo{
+            width: 80vw;
+            height: 80vh;
+            background-color: rgb(0, 255, 170);
+            border: 1px solid black;
+        }
+
+        .rodape{
+            width: 80vw;
+            height: 10vh;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side"><h1>Sidebar</h1></div>
+        
+        <div class="cont2">
+            <div class="topo"><h1>Topo</h1></div>
+            <div class="conteudo"><h1>Conteúdo</h1></div>
+            <div class="rodape"><h1>Rodapé</h1></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
