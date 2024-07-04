@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br   ">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício</title>
+
+    <style>
+        :root{
+            --fundo: rgb(65, 65, 255);
+            --cor-fonte: white;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--fundo);
+        }
+        li{
+            list-style: none;
+            background-color: var(--cor-fonte);
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            height: 3rem;
+            font-size: 3rem;
+            width: 100%;
+            color: var(--cor-fonte);
+            
+        }
+        .secao{
+            display: flex;
+            height: 60vh;
+            width: 80vw;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card{
+            display: flex;
+            width: 20vw;
+            height: 55vh;
+            background-color: var(--cor-fonte);
+            border-radius: 3%;
+            align-items: center;
+           
+        }
+        .box{
+            height: 45vh;
+            width: 20vw;
+            background-color: var(--cor-fonte);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .nome{
+            font-weight: bolder;
+            font-size: 1.3rem;
+            background-color: var(--cor-fonte);
+        }
+        .valor{
+            font-weight: bold;
+            font-size: 1.7rem;
+            color: var(--fundo);
+            background-color: var(--cor-fonte);
+        }
+        .descricao{
+            text-align: center;
+            font-size: 0.7rem;
+            
+            color: gray;
+        }
+        .comprar{
+            display: flex;
+            background-color: var(--fundo);
+            height: 2rem;
+            width: 50%;
+            border-radius: 6%;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+       
+        span{
+            color: var(--cor-fonte);
+           
+        }
+
+    </style>
+
 </head>
 <body>
+
+    <div class="container">
+
+        <h1>Planos</h1>
+        <div class="secao">
+            <div class="card">
+                <div class="box">
+                    <div class="nome">Starter</div>
+                    <div class="valor">R$ 50,00</div>
+                    <div class="descricao">
+                        <ul>
+                            <li>1 usuário</li>
+                            <li>100 GB de armazenamento</li>
+                            <li>Suporte por email</li>
+                        </ul>
+                    </div>
+                    <div class="comprar">
+                        <span>Comprar</span>
+                    </div>           
+                
+                </div>
+            </div>
+
+            <div class="card" >
+                
+                <div class="box">
+                    <div class="nome">Personal</div>
+                    <div class="valor">R$ 100,00</div>
+                    <div class="descricao">
+                        <ul>
+                            <li>10 usuários</li>
+                            <li>1 TB de armazenamento</li>
+                            <li>Suporte por email</li>
+                        </ul>
+                    </div>
+                    <div class="comprar">
+                        <span>Comprar</span>
+                    </div>           
+                
+                </div>
+            </div>
+            <div  class="card">
+                <div class="box">
+                    <div class="nome">Team</div>
+                    <div class="valor">R$ 300,00</div>
+                    <div class="descricao">
+                        <ul>
+                            <li>50 usuários</li>
+                            <li>5 TB de armazenamento</li>
+                            <li>Suporte por email</li>
+                        </ul>
+                    </div>
+                    <div class="comprar">
+                        <span>Comprar</span>
+                    </div>           
+                
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
     
 </body>
 </html>
