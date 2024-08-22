@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caixa{
+            display: flex;
+            flex-wrap: wrap;
+            width: 30vw;
+            height: 60vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .login{
+            width: 70vw;
+            height: 30vh;
+           
+        }
+        .or{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 40vw;
+            height: 5vh;
+            margin-top: 10px;
+        }
+        hr{
+            width: 16vw;
+            height: 1px;
+            color: black;
+        }
+        .opcoes{
+            width: 40vw;
+            height: 20vh;
+            align-items: space-between;
+        }
+
+        .final{
+           width: 40vw;
+        }
+        .imagem{
+            width: 60vw;
+            height: 100vh;
+            background-image: url("https://img.freepik.com/fotos-premium/paisagem-bonita-composicao-da-natureza_157744-2216.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            border: 1px solid gray;
+            border-radius: 4px;
+            outline: none;
+            padding: 0.5rem;
+        }
+        h1{
+            color: black;
+        }
+        input[type=password]{
+            color: black;
+        }
+        input::placeholder{
+            color: black;
+        }
+        h1{
+            font-size: 22px;
+            font-family: sans-serif;
+        }
+        .sub{
+            font-size: 13px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+        button{
+            background-color: #000000; 
+            border: none;
+            color: white;
+            padding: 7px 32px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .botao{
+            width: 40vw;
+            height: 7vh;
+            border: 1px solid black;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 13px;
+            text-align: center;
+        }
+        img{
+            width: 2vw;
+        }
+        .t{
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+            border: 1px solid gray;
+        }
+        .text{
+            align-self: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class = "container">
+
+        <div class="caixa">
+            <div class="login"><p><h1>Sign in or create an account</h1>
+
+                <p class = "sub">Welcome back! Please enter your details</p>
+
+                <form action="#" method="get">
+                    <label for="nomeUsuario"></label>
+                    <input type="text" id="nome" placeholder="Name">
+                    
+                
+            
+                    <label for="senha"></label>
+                    <input type="text" id="senha" placeholder="Email address">
+            
+                    <button type = "button">Continue</button>
+            
+                </form></p></div>
+            <div class="or"><hr><p>or</p><hr></div>
+            <div class="opcoes">
+                <div class="t"><div class="logo"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""></div><div class="text">Continue with Google</div></div>
+                <div class="t"><div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpQr7jRfGRZXz54j5HdGf6MDP8w5l53a3UQ&s" alt=""></div><div class="text">Continue with Apple</div></div>
+                <div class="t"><div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt=""></div><div class="text">Continue with Facebook</div></div>
+            </div>
+            <div class="final"><p>By signing in or an account, you agree with our <u><b>Terms & Conditions</b></u> ans <u><b>Privacy Statement</b></u></p></div>
+        </div>
+        <div class="imagem"></div>
+    
+    
+    </div>
+    
+</body>
+</html>
