@@ -11,19 +11,40 @@
             margin: 0;
             padding: 0;
         }
-
-        body{
-            display: flex;
-            justify-content: center;
-            height: 100vh;
-            align-items: center;
-        }
         .container{
             display: flex;
             width: 100%;
             height: 100%;
         }
-
+        .cont{
+            display: inline-block;
+            background-color: black;
+            width: 47vw;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .botao{
+            width: 100%;
+            justify-content: center;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid beige;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: white;
+            color: gray;
+            font-size: 15px;
+        }
+        form input{
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            border: 1 px solid beige;
+        }
         .login{
             background-color: beige;
             flex: 1;
@@ -37,100 +58,60 @@
         }
 
         .sign h4{
-            color: aliceblue;
+            color: beige;
             font-size: 1rem;
             margin-bottom: 20px;
         }
-        form input{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 40vw;
-            height: 5vh;
-            margin-top: 10px;
-        }
-        hr{
-            width: 16vw;
-            height: 1px;
-            color: black;
-        }
-        .opcoes{
-            width: 40vw;
-            height: 20vh;
-            align-items: space-between;
-        }
-
-        .final{
-           width: 40vw;
-        }
-        .imagem{
-            width: 60vw;
-            height: 100vh;
-            background-image: url("https://img.freepik.com/fotos-premium/paisagem-bonita-composicao-da-natureza_157744-2216.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100vw;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-        }
-        input{
-            border: 1px solid gray;
-            border-radius: 4px;
-            outline: none;
-            padding: 0.5rem;
-        }
-        h1{
-            color: black;
-        }
-        input[type=password]{
-            color: black;
-        }
-        input::placeholder{
-            color: black;
-        }
-        h1{
-            font-size: 22px;
-            font-family: sans-serif;
-        }
-        .sub{
-            font-size: 13px;
-            font-family: sans-serif;
-            text-align: left;
-        }
-        button{
-            background-color: #000000; 
-            border: none;
-            color: white;
-            padding: 7px 32px;
-            text-align: center;
-            font-size: 13px;
-        }
-        .botao{
-            width: 40vw;
-            height: 7vh;
-            border: 1px solid black;
-        }
-        p{
-            font-family: sans-serif;
-            font-size: 13px;
-            text-align: center;
-        }
-        img{
-            width: 2vw;
-        }
-        .t{
-            height: 2rem;
+        body{
             display: flex;
             justify-content: center;
-            align-content: space-between;
-            border: 1px solid gray;
+            height: 100vh;
+            align-items: center;
         }
-        .text{
-            align-self: center;
+        .or{
+            margin: 20px 0;
+           align-items:center;
+           display: flex;
+           color: #777;
+           justify-content: center;
         }
 
+        .or hr{
+            border-top: 1px solid beige;
+            flex: 1;
+            margin: 0 10px;
+            border: none;
+        }
+        .termo{
+            margin-top: 20px;
+            font-size: 15px;
+            color: gray;
+            text-align: center;
+        }
+        .termo a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .image{
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 3%;
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .logo img{
+            width: 2rem;
+            height: 2rem;
+        }
+        .botao img{
+            flex-grow: 1;
+            text-align: center;
+        }
 
     </style>
 </head>
@@ -138,32 +119,41 @@
 
     <div class = "container">
 
-        <div class="caixa">
-            <div class="login"><p><h1>Sign in or create an account</h1>
+        <div class="login">
+            <div class="sign"><h1>Sign in or create an account</h1>
 
-                <p class = "sub">Welcome back! Please enter your details</p>
+                <p>Welcome back! Please enter your details</p>
 
                 <form action="#" method="get">
                     <label for="nomeUsuario"></label>
-                    <input type="text" id="nome" placeholder="Name">
-                    
-                
-            
-                    <label for="senha"></label>
-                    <input type="text" id="senha" placeholder="Email address">
-            
-                    <button type = "button">Continue</button>
-            
-                </form></p></div>
+                    <input id="nomeUsuario" type="text" placeholder="Name" required>
+                    <label for="email"></label>
+                    <input id="email" type="email" placeholder="Email address" required>
+                    <p class="cont">Continue</p>
+                </form>
             <div class="or"><hr><p>or</p><hr></div>
-            <div class="opcoes">
-                <div class="t"><div class="logo"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""></div><div class="text">Continue with Google</div></div>
-                <div class="t"><div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpQr7jRfGRZXz54j5HdGf6MDP8w5l53a3UQ&s" alt=""></div><div class="text">Continue with Apple</div></div>
-                <div class="t"><div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt=""></div><div class="text">Continue with Facebook</div></div>
+            <button class="botao">
+                <div class="logo"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""></div><div class="text"></div>
+                <p>Continue with Google</p>
+            </button>
+            <button class="botao">
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpQr7jRfGRZXz54j5HdGf6MDP8w5l53a3UQ&s" alt=""></div><div class="text"></div>
+                <p>Continue with Apple</p>
+            </button>
+            <button class="botao">
+               <div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt=""></div><div class="text"></div>
+                <p>Continue with Facebook</p>
+            </button>
+
+            <p class="termo">
+                by signing in or creating an account, you agree with our
+                <a href="#">Terms & Condtion</a> and <a href="#">Privacy Statement</a>
+            </p>
             </div>
-            <div class="final"><p>By signing in or an account, you agree with our <u><b>Terms & Conditions</b></u> ans <u><b>Privacy Statement</b></u></p></div>
         </div>
-        <div class="imagem"></div>
+        <div class="image">
+            <img src="https://storage.alboom.ninja/sites/89069/albuns/961273/1._foto_para_quadro_decorativo_paisagem_RJ_vista_mirante_dona_marta_com_P%C3%A3o_de_A%C3%A7ucar.jpg?t=1656510151" alt="">
+        </div>
     
     
     </div>
