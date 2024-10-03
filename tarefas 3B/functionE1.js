@@ -1,3 +1,6 @@
+// 01-- Elabore uma função que dada a idade de um atleta devolve 
+//sua classificação de acordo com as seguintes categorias:
+
 function classificacao(idade){
     if(idade >= 5 && idade <= 7){
         return 'Infantil A';
