@@ -37,18 +37,6 @@ function somaSerie(cont){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //exemplo 2
 //                x   x+1
 //soma =  soma + (1 * 1)
