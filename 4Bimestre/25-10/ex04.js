@@ -12,6 +12,6 @@ function countOccurrences(str, char){
     }
 }
 
-
+ 1
 console.log(countOccurrences("banana", "a")); // Deve exibir: 3
 console.log(countOccurrences("hello world", "l")); // Deve exibir: 3
