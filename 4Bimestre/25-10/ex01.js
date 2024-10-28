@@ -7,7 +7,7 @@ function reverseString(str){
 
 console.log(reverseString("javascript")); // Deve exibir: "tpircsavaj"
 console.log(reverseString("hello")); // Deve exibir: "olleh"
-console.log(reverseString("Maria Macedo"))
+console.log(reverseString("Maria Macedo"));
 
 //scr.split('') Divide as strings em um array de caracteres
 //Por exemplo, para a string "Hello", split('') resulta em ['H', 'e', 'l', 'l', 'o'].

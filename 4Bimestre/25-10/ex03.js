@@ -13,4 +13,5 @@ function isPalindrome(str){
 }
 
 console.log(isPalindrome("arara")); // Deve exibir: true
+console.log(isPalindrome("maram"));
 console.log(isPalindrome("hello")); // Deve exibir: false
