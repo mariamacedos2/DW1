@@ -20,4 +20,4 @@ let vetor = [10,20,30]
 console.log(vetor)
 
 
-console.log(vetor)
+console.log(vetor)  
