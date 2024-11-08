@@ -15,5 +15,5 @@ function classificacao(idade){
     } 
 }
 
-console.log(classificacao(14));
+console.log(classificacao(17));
 
