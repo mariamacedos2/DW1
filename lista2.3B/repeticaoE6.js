@@ -2,10 +2,10 @@
 
 function fatorial(N){
     let count = 1
-    for(let i = N; i > 1; i--){
-       count = count * i
+    for(let i = 1; i <= N; i++){
+        count *= i
     }
-    return count
+    console.log(count)
 }
 
-console.log(fatorial(5))
+fatorial(5)

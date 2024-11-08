@@ -1,14 +1,14 @@
 //03--Faça uma função que dado um número N, imprime na tela todos os valores pares entre N e 1
 
 function pares(N){
-    for(let i = N; i >= 1; i--){
-        if(i % 2 === 0){
-            console.log(i);
+    for(let i = 1; i <= N; N--){
+        if(N % 2 === 0){
+            console.log(N)
         }
     }
 }
 
-pares(20)
+pares(8)
 // % retorna o resto da divisao de N por 2
 
 //== (igualdade solta): Compara apenas os valores e tenta converter os tipos automaticamente para ver se eles são equivalentes. -

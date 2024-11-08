@@ -21,8 +21,4 @@ function conversor(centimetros, unidade) {
     return resultado;
 }
 
-let cm = 1500;
-let uniconver = 'm';
-
-let resultadoConversao = conversor(cm, uniconver);
-console.log(`A medida convertida é: ${cm} ${uniconver}`);
+console.log(conversor('8', "lm"))

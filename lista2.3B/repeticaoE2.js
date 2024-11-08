@@ -5,5 +5,4 @@ function decrescente(N){
         console.log(i)
     }
 }
-
-decrescente(7);
+decrescente(8)

@@ -6,11 +6,12 @@ function triangulo(lado1, lado2, lado3){
          (lado1 + lado2 > lado3 && Math.abs(lado1 - lado2) < lado3) &&
          (lado1 + lado3 > lado2 && Math.abs(lado1 - lado3) < lado2) &&
          (lado2 + lado3 > lado1 && Math.abs(lado2 - lado3) < lado1)
-     ) 
-     {return true 
+     )
+     {
+     return true
+    }
  
      }else { return false}
- }
  
  let l1 = 10
  let l2 = 20

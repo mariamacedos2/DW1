@@ -9,9 +9,4 @@ function bissexto(ano) {
     }
 }
 
-let ano = 2007;
-if (bissexto(ano)) {
-    console.log(ano + " é bissexto.");
-} else {
-    console.log(ano + " não é bissexto.");
-}
+console.log(bissexto("2004")) 
