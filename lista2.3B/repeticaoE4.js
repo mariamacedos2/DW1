@@ -2,7 +2,9 @@
 //Faça uma função para determinar se um número é primo ou não. A função deve devolver true ou false
 
 function primo(N) {
-    if (N < 2) return false;
+    if (N < 2){
+        return false
+    } 
     for (let i = 2; i <= Math.sqrt(N); i++) {
         if (N % i === 0) {
             return false;
