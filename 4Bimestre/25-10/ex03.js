@@ -4,7 +4,7 @@
 function isPalindrome(str){
     let palavra = str.split('').reverse().join('');
 
-    if(palavra == str){
+    if(palavra == str){   
         return true
     }
     else{

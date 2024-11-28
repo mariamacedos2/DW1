@@ -4,7 +4,7 @@
 const carro = {
         marca: "Toyota",
         modelo: "Corolla",
-        ano: 2020
-};
+        ano : 2020
+}
 
-console.log(carro)
+console.log(carro);

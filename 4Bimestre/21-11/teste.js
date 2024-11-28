@@ -1,13 +1,9 @@
-const carrinho = {
-    itens: [
-      { nome: "Camisa", preco: 50 },
-      { nome: "Calça", preco: 100 }
-    ],
-    calcularTotal: function() {
-      let total = 0;
-      for (let item of this.itens) {
-        total += item.preco;
-      }
-      return total;
-    }
-  };
+const estudantes = [
+  { nome: "Alice", nota: 9 },
+  { nome: "Bruno", nota: 7 },
+  { nome: "Carlos", nota: 8 }
+];
+
+// Usando map para transformar cada objeto em uma string
+const nomes = estudantes.map(estudantes => estudantes.nome);
+console.log(nomes);

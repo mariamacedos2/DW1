@@ -2,13 +2,11 @@
 // Depois, remova a propriedade `modelo` do objeto e exiba o objeto atualizado no console.
 
 const carro = {
-    marca : "Toyota",
-    modelo : "Corolla",
+    marca: "toyota",
+    modelo: "Corolla",
     ano: 2020
-};
+}
 
-carro.cor = "preto"
-
+carro.carro = "preto"
 delete carro.modelo
-
 console.log(carro)
