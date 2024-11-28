@@ -3,7 +3,7 @@
 function countOccurrences(arr, element){
     let count = 0
     for(i of arr){
-        if(i == element){
+        if(i === element){
             count += 1
         }
     }

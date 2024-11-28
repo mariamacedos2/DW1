@@ -7,6 +7,6 @@ const carro = {
     ano: 2020
 }
 
-carro.carro = "preto"
+carro.cor = "preto"
 delete carro.modelo
 console.log(carro)
