@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="trabalho.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./teste.js"></script>
     <link rel="stylesheet" href="./teste.css">
-
-</head>
+    <script src="https://kit.fontawesome.com/f83c264f9b.js" crossorigin="anonymous"></script>
+  </head>
 <body>
     <div class="container">
         <div class="top-bar">
           <h1>Lista de Tarefas</h1>
         </div>
         
-        <div class="caixa_tarefa">
-          <input type="text" id="caixa_tarefa" placeholder="Digite para adicionar uma nova tarefa...">
-          <button id="adicionar_tar">Adicionar</button>
-        </div>
+        <header>
+          <input id="caixa_tarefa" type="text" placeholder="Digite para adicionar uma nova tarefa...">
+          <button onclick="addTarefa()" id="adicionar_tar">Adicionar</button>
+        </header>
         
-        <ul id="lista_tar">
-        </ul>
+
+       <main id="lista_tar">
+            
+       </main>
         
         <div id="tar_concluida">0 tarefas concluídas</div>
 
@@ -35,6 +35,8 @@
           <span class="heart">💗</span>
         </div>
         
+        
     </div>
+    <script src="./teste.js"></script>
 </body>
 </html>
