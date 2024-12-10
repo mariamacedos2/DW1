@@ -9,7 +9,24 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #ffa4ed;
+  --secondary-color: hsl(317, 80%, 73%);
+  --box-color: #fdf5f5;
+}
+
+.dark-mode {
+  --bg-color: #511e50;
+  --text-color: #f700ff;
+  --secondary-color: hsl(317, 80%, 50%);
+  --box-color: #3d0038;
+}
+
 
 .container {
   width: 95vw;
@@ -22,6 +39,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  background-color: var(--box-color);
+  border-color: var(--secondary-color);
 }
 
 .top-bar {
@@ -40,6 +59,8 @@ button {
   background-color: transparent;
   font-size: 1.2rem;
   font-family: "Sour Gummy", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .caixa_tarefa {
@@ -76,6 +97,7 @@ button {
   border: 1.5px solid #000000;
   border-radius: 4px;
   width: 40vw;
+  border-color: var(--text-color);
 }
 
 .container#heart-decoration {
@@ -139,6 +161,8 @@ main{
   cursor: pointer;
   border: 2px solid #000000;
   border-radius: 4px;
+  background-color: var(--bg-color);
+  border-color: var(--text-color);
 }
 
 .item-icone{
@@ -167,6 +191,7 @@ main{
 
 .item.clicado{
   background: #c9fae0;
+  background-color: #2e7d32;
 }
 
 .item.clicado .item-nome{

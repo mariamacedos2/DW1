@@ -65,3 +65,19 @@ input.addEventListener("Keyup", function(event){
     adicionar_tar.click();
   }
 })
+
+function alternarTema() {
+  document.body.classList.toggle('dark-mode');
+
+  // Salva a preferência no armazenamento local para persistência
+  const modoAtual = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', modoAtual);
+}
+
+// Carregar o tema salvo ao carregar a página
+window.addEventListener('DOMContentLoaded', () => {
+  const temaSalvo = localStorage.getItem('theme');
+  if (temaSalvo === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+});
