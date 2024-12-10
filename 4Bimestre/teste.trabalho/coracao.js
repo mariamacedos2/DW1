@@ -1,30 +1,37 @@
-// Códigos da lista de tarefas continuam aqui...
-// Adicionar abaixo o código para criar corações flutuantes
+// script.js
+const startRainButton = document.getElementById('startRain');
+const heartContainer = document.getElementById('heartContainer');
 
-const heartsContainer = document.getElementById('hearts-container');
-
-// Função para criar um coração decorativo
 function createHeart() {
   const heart = document.createElement('div');
-  heart.className = 'heart';
-  heart.textContent = '❤️';
+  heart.classList.add('heart');
 
-  // Posição inicial e estilo aleatório
-  const startX = Math.random() * window.innerWidth; // Largura aleatória
-  const startSize = Math.random() * 20 + 10; // Tamanho aleatório (10px a 30px)
-  const duration = Math.random() * 2 + 3; // Duração de 3 a 5 segundos
+  // Posição inicial aleatória
+  heart.style.left = `${Math.random() * 100}vw`;
 
-  heart.style.left = `${startX}px`;
-  heart.style.fontSize = `${startSize}px`;
-  heart.style.animationDuration = `${duration}s`;
+  // Tamanho aleatório
+  const size = Math.random() * 10 + 10; // entre 10px e 20px
+  heart.style.width = `${size}px`;
+  heart.style.height = `${size}px`;
 
-  heartsContainer.appendChild(heart);
+  // Duração de queda aleatória
+  heart.style.animationDuration = `${Math.random() * 3 + 2}s`; // entre 2s e 5s
 
-  // Remover coração após a animação
-  setTimeout(() => {
+  // Cor aleatória
+  heart.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 75%)`;
+
+  heartContainer.appendChild(heart);
+
+  // Remover coração após animação
+  heart.addEventListener('animationend', () => {
     heart.remove();
-  }, duration * 1000);
+  });
 }
 
-// Gerar corações periodicamente
-setInterval(createHeart, 500); // Um coração a cada 500ms
+// Inicia a chuva ao clicar no botão
+startRainButton.addEventListener('click', () => {
+  const interval = setInterval(createHeart, 150); // Cria um coração a cada 150ms
+
+  // Para a chuva após 10 segundos (opcional)
+  setTimeout(() => clearInterval(interval), 10000);
+});
